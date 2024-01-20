@@ -1,2 +1,2 @@
-# ethereum_smartcontracts
-Ethereum Smart Contracts
+# Ethereum Smart Contracts
+Smart Contracts for practice.
