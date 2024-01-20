@@ -35,8 +35,8 @@ contract CrowdFunding {
         _;
     }
 
-    // Setting the Minimum Amount
-    function setMinimum(uint256 _minimumAmount, uint256 _targetAmount) public ownerOnly {
+    // Setting the Minimum and Target
+    function setMinimumTarget(uint256 _minimumAmount, uint256 _targetAmount) public ownerOnly {
         require(!campaign.started, "Campaign already started!");
         require(_minimumAmount >= 0, "Invalid Minimum Amount!");
         require(_targetAmount > campaign.minimumAmount, "Invalid Target Amount!");
